@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 function expensiveCalculation(count) {
-  console.log("Calculating...");
+//   console.log("Calculating...");
   for (let i = 0; i < 1000000000; i++) {} // Mock heavy calculation
   return count;
 }
@@ -19,15 +19,15 @@ const UseMemo = ({ count, setCount, addTodo, todos }) => {
         <p key={index}>{todo}</p>
       ))}
 
+      <hr />
+
       <div>
         Count: {count}
         <button onClick={() => setCount(count + 1)}>+</button>
       </div>
 
-      <hr />
-
       <h2>Expensive Calculation</h2>
-      <div>{calculation}</div>
+      <div>{1000000000}</div>
     </div>
   );
 };

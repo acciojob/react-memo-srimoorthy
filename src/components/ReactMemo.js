@@ -23,7 +23,9 @@ function ReactMemo() {
   }, [skill]);
 
   return (
+
     <div>
+      <hr />
       <input
         type="text"
         value={skill}
