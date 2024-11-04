@@ -6,6 +6,7 @@ function App() {
   const [todos, setTodos] = useState(['New Todo']);
   const [count, setCount] = useState(0);
 
+  // Function to add a new todo
   const addTodo = useCallback(() => {
     setTodos((prevTodos) => [...prevTodos, 'New Todo']);
   }, []);
@@ -22,6 +23,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

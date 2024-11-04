@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 const SkillList = React.memo(({ skills }) => {
-  console.log('SkillList rendered');
+  console.log("Rendering SkillList");
   return (
     <ul>
       {skills.map((skill, index) => (
@@ -37,3 +37,4 @@ function ReactMemo() {
 }
 
 export default ReactMemo;
+
