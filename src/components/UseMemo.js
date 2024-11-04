@@ -13,11 +13,11 @@ const UseMemo = ({ count, setCount, addTodo, todos }) => {
   return (
     <div>
       <h2>My todos</h2>
-      <input type="text" value="New Todo" readOnly />
-      <button onClick={addTodo}>Add Todo</button>
+      {/* <button onClick={addTodo}>Add Todo</button> */}
       {todos.map((todo, index) => (
         <p key={index}>{todo}</p>
       ))}
+      <button onClick={addTodo}>Add Todo</button>
 
       <hr />
 
@@ -27,11 +27,14 @@ const UseMemo = ({ count, setCount, addTodo, todos }) => {
       </div>
 
       <h2>Expensive Calculation</h2>
-      <div>{1000000000}</div>
+      <div>{count ? count : 1000000000}</div>
+
+      <hr />
     </div>
   );
 };
 
 export default UseMemo;
+
 
 
